@@ -6,7 +6,6 @@
 <title>STRATEGE SERVICE - VVIP Tunneling</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* Reset & Fonts */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -50,20 +49,39 @@ header p {
   to { opacity: 1; transform: translateY(0);}
 }
 
-/* Main CTA Section */
-.main-cta {
-  text-align: center;
-  flex: 1;
+/* Layanan Section */
+.services {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
 }
 
-.main-cta h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ffdd59;
+.service-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.service-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* Main CTA */
+.main-cta {
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .main-cta a.whatsapp {
@@ -91,6 +109,34 @@ header p {
   height: 30px;
 }
 
+/* Testimoni */
+.testimoni {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimoni h3 {
+  color: #ffdd59;
+  margin-bottom: 20px;
+}
+
+.testimoni-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.testimoni-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -101,16 +147,10 @@ footer {
 }
 
 /* Responsive */
-@media(max-width:600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  .main-cta h2 {
-    font-size: 1.5rem;
-  }
-  .main-cta a.whatsapp {
-    font-size: 1rem;
-    padding: 12px 20px;
+@media(max-width:768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>
@@ -122,6 +162,24 @@ footer {
   <p>Layanan Tunneling VVIP - Keamanan & Kecepatan Maksimal</p>
 </header>
 
+<section class="services">
+  <div class="service-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="VPS">
+    <h3>VPS</h3>
+    <p>Server virtual private super cepat & stabil, cocok untuk berbagai keperluan.</p>
+  </div>
+  <div class="service-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3091/3091222.png" alt="RDP">
+    <h3>RDP</h3>
+    <p>Akses desktop jarak jauh dengan keamanan maksimal & latency rendah.</p>
+  </div>
+  <div class="service-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721240.png" alt="Autoscript VVIP">
+    <h3>Autoscript VVIP</h3>
+    <p>Instalasi otomatis script premium tanpa ribet, siap pakai langsung.</p>
+  </div>
+</section>
+
 <div class="main-cta">
   <h2>Ayo Buy Layanan Tunneling VVIP</h2>
   <a href="https://wa.me/22589661726" class="whatsapp" target="_blank">
@@ -129,6 +187,20 @@ footer {
     Chat via WhatsApp
   </a>
 </div>
+
+<section class="testimoni">
+  <h3>Testimoni Pelanggan</h3>
+  <div class="testimoni-card">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pelanggan 1">
+    <p>"Layanan VPS STRATEGE SERVICE sangat cepat & supportnya mantap!"</p>
+    <strong>- Andi</strong>
+  </div>
+  <div class="testimoni-card">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Pelanggan 2">
+    <p>"RDP nya stabil, cocok untuk kerja remote. Highly recommended!"</p>
+    <strong>- Siti</strong>
+  </div>
+</section>
 
 <footer>
   &copy; 2026 STRATEGE SERVICE. All rights reserved.
