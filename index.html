@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRATEGE SERVICE - VVIP Tunneling</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Reset & Fonts */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px 30px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #c0f5ff;
+  margin-top: 0;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff; }
+  100% { text-shadow: 0 0 30px #00f0ff, 0 0 60px #00f0ff; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Main CTA Section */
+.main-cta {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffdd59;
+}
+
+.main-cta a.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-cta a.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* WhatsApp Icon */
+.main-cta img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media(max-width:600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .main-cta h2 {
+    font-size: 1.5rem;
+  }
+  .main-cta a.whatsapp {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>STRATEGE SERVICE</h1>
+  <p>Layanan Tunneling VVIP - Keamanan & Kecepatan Maksimal</p>
+</header>
+
+<div class="main-cta">
+  <h2>Ayo Buy Layanan Tunneling VVIP</h2>
+  <a href="https://wa.me/22589661726" class="whatsapp" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    Chat via WhatsApp
+  </a>
+</div>
+
+<footer>
+  &copy; 2026 STRATEGE SERVICE. All rights reserved.
+</footer>
+
+</body>
+</html>
